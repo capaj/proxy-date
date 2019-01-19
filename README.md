@@ -7,7 +7,7 @@ a minimal utility for painless mocking Date in node.js and Proxy enabled browser
 ## Why yet another Date mocking library?
 
 Yes there is plenty of them already out there(timekeeper, mockdate atc.), but this one is the only one using proxies. What's so special about proxies? It only intercepts the constructor and `.now()`. There is no monkeypatching globals like with all the other libraries. Which means any other code working with `Date` global won't get affected by this.
-The only downside is this only wors for node.js 6 and up.
+The only downside is this only works for node.js 6 and up.
 
 ## Install
 
