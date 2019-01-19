@@ -27,3 +27,5 @@ new Date().toISOString() //2019-01-19T00:20:20.654Z
 unmock()
 new Date().toISOString() // now
 ```
+
+I like to use this with jest's snapshot tests to ensure I don't have to manually write matchers for every date that happens to occur in a snapshot.
