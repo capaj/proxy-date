@@ -1,0 +1,58 @@
+{
+  "name": "proxy-date",
+  "version": "0.1.0",
+  "description": "minimal utility for painless mocking Date in node.js and Proxy enabled browsers",
+  "main": "proxy-date.cjs.js",
+  "module": "proxy-date.js",
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "npm run build",
+    "build": "babel proxy-date.js --out-file proxy-date.cjs.js",
+    "w": "jest --watch"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capaj/proxy-date.git"
+  },
+  "keywords": [
+    "mock",
+    "date",
+    "fake",
+    "time",
+    "freeze",
+    "stop",
+    "testing",
+    "keeper"
+  ],
+  "author": "capajj@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/capaj/proxy-date/issues"
+  },
+  "homepage": "https://github.com/capaj/proxy-date#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "husky": "^1.3.1",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3",
+    "pretty-quick": "^1.10.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "dependencies": {}
+}
