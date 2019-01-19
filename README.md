@@ -1,3 +1,6 @@
+[![npm version](https://badge.fury.io/js/proxy-date.svg)](https://badge.fury.io/js/proxy-date)
+[![deps](https://david-dm.org/capaj/proxy-date.svg)](https://david-dm.org/capaj/proxy-date)
+
 # proxy-date
 
 a minimal utility for painless mocking Date in node.js and Proxy enabled browsers
