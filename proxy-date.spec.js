@@ -27,5 +27,6 @@ describe('proxyDate', function() {
     unmock()
     expect(Date.now() > mockedDate)
     expect(new Date() * 1 > mockedDate)
+    expect(global._unmockedDate).toBe(undefined)
   })
 })

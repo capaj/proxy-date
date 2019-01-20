@@ -21,4 +21,5 @@ export function mock(date) {
 
 export function unmock() {
   globalObj.Date = globalObj._unmockedDate
+  delete globalObj._unmockedDate
 }

@@ -1,6 +1,6 @@
 {
   "name": "proxy-date",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "minimal utility for painless mocking Date in node.js and Proxy enabled browsers",
   "main": "proxy-date.cjs.js",
   "module": "proxy-date.js",
