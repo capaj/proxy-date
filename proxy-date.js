@@ -15,6 +15,9 @@ export function mock(date) {
         return () => new Target(date) * 1
       }
       return Reflect.get(...arguments)
+    },
+    apply: function(Target) {
+        return new Target(date).toString();
     }
   })
 }
