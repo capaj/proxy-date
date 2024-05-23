@@ -15,19 +15,18 @@ The only downside is this only works for node.js 6 and up.
 ## Install
 
 ```
-npm i proxy-date -D
-yarn add proxy-date -D
+pnpm i proxy-date -D
 ```
 
 ## Usage
 
 ```js
-import { mock, unmock } from 'proxy-date'
+import { mockDate, unmockDate } from 'proxy-date'
 
-mock('2020-01-19T00:20:20.654Z')
+mockDate('2020-01-19T00:20:20.654Z')
 new Date().toISOString() //2019-01-19T00:20:20.654Z
 
-unmock()
+unmockDate()
 new Date().toISOString() // now
 ```
 
