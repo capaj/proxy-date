@@ -4,6 +4,7 @@
   "description": "minimal utility for painless mocking Date in node.js and Proxy enabled browsers",
   "main": "dist/proxy-date.cjs",
   "module": "dist/proxy-date.js",
+  "types": "dist/proxy-date.d.ts",
   "exports": {
     ".": {
       "import": "./dist/proxy-date.js",
